@@ -298,7 +298,6 @@ const AnimatedBackground = () => {
     await sleep(400);
     kbd.visible = true;
     setKeyboardRevealed(true);
-    console.log(activeSection);
     gsap.fromTo(
       kbd?.scale,
       { x: 0.01, y: 0.01, z: 0.01 },
@@ -525,7 +524,6 @@ const AnimatedBackground = () => {
       Object.values(SKILLS)
         .sort(() => Math.random() - 0.5)
         .forEach((skill, idx) => {
-          console.warn(splineApp)
           const keycap = splineApp.findObjectByName(skill.name);
           if (!keycap) return;
           const t = gsap.to(keycap?.position, {
