@@ -220,8 +220,8 @@ export const SKILLS: Record<SkillNames, Skill> = {
   },
   [SkillNames.VERCEL]: {
     id: 24,
-    name: "vim",
-    label: "Vim",
+    name: "해",
+    label: "해",
     shortDescription: "해피 1주년! 앞으로도 잘 부탁해",
     color: "#6cc24a",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
