@@ -525,6 +525,7 @@ const AnimatedBackground = () => {
       Object.values(SKILLS)
         .sort(() => Math.random() - 0.5)
         .forEach((skill, idx) => {
+          console.warn(splineApp)
           const keycap = splineApp.findObjectByName(skill.name);
           if (!keycap) return;
           const t = gsap.to(keycap?.position, {
