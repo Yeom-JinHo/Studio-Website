@@ -10,7 +10,7 @@ const config = {
   site: "",
 
   get ogImg() {
-    return this.site + "/assets/seo/og-image.png";
+    return "https://i-luv-dorin.vercel.app/assets/seo/og-image.png";
   },
   social: {
     twitter: "",
