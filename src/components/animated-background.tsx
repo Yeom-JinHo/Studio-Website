@@ -298,7 +298,6 @@ const AnimatedBackground = () => {
     await sleep(400);
     kbd.visible = true;
     setKeyboardRevealed(true);
-    console.log(activeSection);
     gsap.fromTo(
       kbd?.scale,
       { x: 0.01, y: 0.01, z: 0.01 },
@@ -568,7 +567,7 @@ const AnimatedBackground = () => {
             setSplineApp(app);
             bypassLoading();
           }}
-          scene="/assets/skills-keyboard.spline"
+          scene="/assets/skills_keyboard.spline"
         />
       </Suspense>
     </>

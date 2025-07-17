@@ -48,36 +48,11 @@ const Header = ({ loader }: HeaderProps) => {
       <div className={cn(styles.bar, "flex items-center justify-between")}>
         <Link href="/" className="flex items-center justify-center">
           <Button variant={"link"} className="text-md">
-            {config.author}
+            I luv Dorin
           </Button>
         </Link>
 
         <FunnyThemeToggle className="w-6 h-6 mr-4" />
-        <Button
-          variant={"ghost"}
-          onClick={() => setIsActive(!isActive)}
-          className={cn(
-            styles.el,
-            "m-0 p-0 h-6 bg-transparent flex items-center justify-center"
-          )}
-        >
-          <div className="relative flex items-center">
-            <motion.p
-              variants={opacity}
-              animate={!isActive ? "open" : "closed"}
-            >
-              Menu
-            </motion.p>
-            <motion.p variants={opacity} animate={isActive ? "open" : "closed"}>
-              Close
-            </motion.p>
-          </div>
-          <div
-            className={`${styles.burger} ${
-              isActive ? styles.burgerActive : ""
-            }`}
-          ></div>
-        </Button>
       </div>
       <motion.div
         variants={background}
