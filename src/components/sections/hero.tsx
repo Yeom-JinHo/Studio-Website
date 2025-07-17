@@ -43,30 +43,16 @@ const HeroSection = () => {
                   </p>
                 </BlurIn>
                 <BlurIn delay={1}>
-                  <Tooltip delayDuration={300}>
-                    <TooltipTrigger asChild>
-                      <h1
-                        className={cn(
-                          "font-thin text-6xl text-transparent text-slate-800 ml-1 text-left",
-                          "cursor-default text-edge-outline font-display sm:text-7xl md:text-9xl "
-                        )}
-                      >
-                        {config.author.split(" ")[0]}
-                        <br className="md:block hiidden" />
-                        {config.author.split(" ")[1]}
-                        {/* PLEASE hello??
-
-                        <br className="md:block hiidden" />
-                        UNMUTE ME 😢😢 */}
-                      </h1>
-                    </TooltipTrigger>
-                    <TooltipContent
-                      side="top"
-                      className="dark:bg-white dark:text-black"
-                    >
-                      theres something waiting for you in devtools
-                    </TooltipContent>
-                  </Tooltip>
+                  <h1
+                    className={cn(
+                      "font-thin text-6xl text-transparent text-slate-800 ml-1 text-left",
+                      "cursor-default text-edge-outline font-display sm:text-7xl md:text-9xl "
+                    )}
+                  >
+                    {config.author.split(" ")[0]}
+                    <br className="md:block hiidden" />
+                    {config.author.split(" ")[1]}
+                  </h1>
                 </BlurIn>
                 {/* <div className="md:block hidden bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 w-screen h-px animate-fade-right animate-glow" /> */}
                 <BlurIn delay={1.2}>
@@ -88,7 +74,7 @@ const HeroSection = () => {
                   target="_blank"
                   className="flex-1"
                 >
-                  <BoxReveal delay={2} width="100%" >
+                  <BoxReveal delay={2} width="100%">
                     <Button className="flex items-center gap-2 w-full">
                       <File size={24} />
                       <p>Resume</p>
@@ -111,18 +97,12 @@ const HeroSection = () => {
                       <p>pls 🥹 🙏</p>
                     </TooltipContent>
                   </Tooltip>
-                  <Link
-                    href={config.social.github}
-                    target="_blank"
-                  >
+                  <Link href={config.social.github} target="_blank">
                     <Button variant={"outline"}>
                       <SiGithub size={24} />
                     </Button>
                   </Link>
-                  <Link
-                    href={config.social.linkedin}
-                    target="_blank"
-                  >
+                  <Link href={config.social.linkedin} target="_blank">
                     <Button variant={"outline"}>
                       <SiLinkedin size={24} />
                     </Button>
