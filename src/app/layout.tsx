@@ -10,7 +10,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Footer from "@/components/footer/footer";
 import Script from "next/script";
 import Preloader from "@/components/preloader";
-import EasterEggs from "@/components/easter-eggs";
 import { config } from "@/data/config";
 
 export const metadata: Metadata = {
@@ -81,7 +80,6 @@ export default function RootLayout({
               <Footer />
             </TooltipProvider>
             <Toaster />
-            <EasterEggs />
             <ElasticCursor />
           </Preloader>
         </ThemeProvider>
