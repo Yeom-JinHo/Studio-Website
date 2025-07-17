@@ -230,11 +230,42 @@ export type Project = {
   src: string;
 };
 const projects: Project[] = [
-  {
-    id: "codingducks",
-    category: "Coding platform",
-    title: "Coding Ducks",
-    src: "",
-  }
+    {
+      id: "1",
+      category: "24/6",
+      title: "첫 만남",
+      src: "/assets/memory/1.png",
+    },
+    {
+      id: "2",
+      category: "24/8",
+      title: "063XMerong party",
+      src: "/assets/memory/2.png",
+    },
+    {
+      id: "3",
+      category: "25/2",
+      title: "일본 여행",
+      src: "/assets/memory/3.png",
+    },
+    {
+      id: "4",
+      category: "25/2",
+      title: "영등포 어딘가",
+      src: "/assets/memory/4.png",
+    },
+    {
+      id: "5",
+      category: "25/6",
+      title: "천안 여행",
+      src: "/assets/memory/5.png",
+    },
+    {
+      id: "6",
+      category: "25/7",
+      title: "대부도",
+      src: "/assets/memory/6.png",
+    } 
+
 ];
 export default projects;
