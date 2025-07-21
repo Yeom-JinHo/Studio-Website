@@ -110,7 +110,7 @@ const LottieGiftBox = () => {
       {/* Reset 버튼 */}
       {!isVisible && (
         <>
-        에-게?  이게 다라고?
+        에-계?  이게 다라고?
         
         <Button 
           onClick={resetGift}
