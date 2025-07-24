@@ -7,7 +7,7 @@ import giftBoxAnimation from "/public/assets/GiftBox.json";
 import confetti from 'canvas-confetti';
 import { BlurIn } from './reveal-animations';
 import { cn } from "@/lib/utils";
-
+import Image from "next/image";
 const LottieGiftBox = () => {
   const lottieRef = useRef<any>(null);
   const [isVisible, setIsVisible] = useState(true);
@@ -76,14 +76,7 @@ const LottieGiftBox = () => {
         isOpen && (
           <>
             <BlurIn delay={1}>
-                  <h1
-                    className={cn(
-                      "font-bold mt-2 text-3xl text-transparent text-slate-800 ml-3 text-left",
-                      "cursor-default text-edge-outline font-display"
-                    )}
-                  >
-                    청람으로 ^__^
-                  </h1>
+                <Image src="/assets/ysl.png" alt="gift" width={100} height={100} />
                 </BlurIn>
           </>
         )
@@ -110,14 +103,13 @@ const LottieGiftBox = () => {
       {/* Reset 버튼 */}
       {!isVisible && (
         <>
-        에-계?  이게 다라고?
-        
+        작지만 소중한 선물을 준비했어~
         <Button 
           onClick={resetGift}
           variant="outline"
           className="border-2 border-gray-300 hover:bg-gray-100 transition-all duration-300"
         >
-          다시보기.
+          다시보기
         </Button>
         </>
       )}
