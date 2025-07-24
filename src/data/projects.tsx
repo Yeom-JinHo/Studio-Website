@@ -265,7 +265,12 @@ const projects: Project[] = [
       category: "25/7",
       title: "대부도",
       src: "/assets/memory/6.png",
-    } 
-
+    },
+    {
+      id: "7",
+      category: "25/7",
+      title: "프레드 내한",
+      src: "/assets/memory/7.png",
+    }
 ];
 export default projects;
